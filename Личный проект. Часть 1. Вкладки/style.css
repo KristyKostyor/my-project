@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.tabs {
+    display: inline-block;
+    padding: 0;
+    margin: 15px 0 0 15px;
+    z-index: 1;
+}
+
+.tabs li {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    margin: 0;
+    margin-right: 10px;
+    padding: 6px 12px;
+    list-style: none;
+    border: 2px dashed #ccc;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.tabs li.active {
+    background-color: #fff;
+    border-style: solid;
+    border-bottom: none;
+}
+
+.text {
+    display: none;
+}
+
+.text.active {
+    display: block;
+    padding: 20px;
+    min-height: 250px;
+    font-size: 20px;
+    font-family: Arial;
+    border: 2px solid #ccc;
+}
+
+form {
+    display: block;
+    width: 540px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+textarea {
+    padding: 10px;
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+}
+
+button[type="submit"] {
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    background: #6fb065;
+    color: #fff;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    font-size: 18px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: #fff;
+    opacity: 0.2;
+    transition: transform 300ms ease-in;
+}
+
+button:after {
+    transform: scale(0, 1);
+    transform-origin: left;
+}
+
+button:hover:after {
+    transform: scale(1);
+}

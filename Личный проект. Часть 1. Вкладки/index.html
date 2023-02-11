@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вкладки</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper" id="box">
+      <ul class="tabs" id="tabs">
+        <li class="tab active" data-tab="1">ТАБ 1</li>
+        <li class="tab" data-tab="2">ТАБ 2</li>
+      </ul>
+      <div class="text active" data-text="1">ТЕКСТ 1</div>
+      <div class="text" data-text="2">ТЕКСТ 2</div>
+    </div>
+
+    <form>
+      <div>
+        <textarea id="tab-text"></textarea>
+      </div>
+      <button type="submit" id="addTab">ДОБАВИТЬ ТАБ</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
